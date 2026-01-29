@@ -1,0 +1,6 @@
+.homePageImage {
+  height: 30vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=home.module.css.map */
