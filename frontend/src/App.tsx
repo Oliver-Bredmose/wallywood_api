@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
 import { Home } from './pages/Home/home'
 import { MainLayout } from './layout/MainLayout'
-import { Posters } from './pages/Home/Poster'
+import { Posters } from './pages/Poster/Poster'
 
 function App() {
   return (
