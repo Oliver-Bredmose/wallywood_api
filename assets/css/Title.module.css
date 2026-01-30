@@ -1,4 +1,11 @@
+body {
+  background-color: #5C1F06;
+}
+
 .titleStyle {
   font-size: 2rem;
   color: #D97852;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
 }/*# sourceMappingURL=Title.module.css.map */

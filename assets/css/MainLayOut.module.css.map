@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../frontend/src/layout/MainLayOut.module.scss","../../frontend/src/styles/_globals.scss","MainLayOut.module.css"],"names":[],"mappings":"AAEA;EACE,yBCHe;EDIf,iBAAA;EACA,YAAA;AEDF","file":"MainLayOut.module.css"}
+{"version":3,"sources":["../../frontend/src/styles/_globals.scss","MainLayout.module.css","../../frontend/src/layout/MainLayout.module.scss"],"names":[],"mappings":"AAQA;EACI,yBAAA;ACPJ;;ACAA;EACE,yBFHe;EEIf,iBAAA;EACA,YAAA;ADGF","file":"MainLayout.module.css"}

@@ -16,10 +16,10 @@ export function Footer() {
         </div>
       </section>
       <section>
-        <p>icon</p>
-        <p>icon</p>
-        <p>icon</p>
-        <p>icon</p>
+        <p>Pinterest</p>
+        <p>Instagram</p>
+        <p>Facebook</p>
+        <p>Twitter</p>
       </section>
     </footer>
   )

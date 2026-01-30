@@ -1,5 +1,9 @@
+body {
+  background-color: #5C1F06;
+}
+
 .pageContainer {
   background-color: #F9F9F9;
   max-width: 1366px;
   margin: auto;
-}/*# sourceMappingURL=MainLayOut.module.css.map */
+}/*# sourceMappingURL=MainLayout.module.css.map */

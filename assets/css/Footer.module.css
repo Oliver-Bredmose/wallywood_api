@@ -1,3 +1,7 @@
+body {
+  background-color: #5C1F06;
+}
+
 .footerStyle {
   border-top: solid 2px #D1B3A7;
   margin-top: auto;
@@ -8,6 +12,7 @@
 .footerStyle section {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   gap: 32px;
 }
 .footerStyle section:nth-child(2) {
@@ -21,4 +26,8 @@
 .footerStyle p {
   font-weight: 200;
   font-size: 1rem;
+}
+.footerStyle h3 {
+  font-size: 2rem;
+  color: #D97852;
 }/*# sourceMappingURL=Footer.module.css.map */
