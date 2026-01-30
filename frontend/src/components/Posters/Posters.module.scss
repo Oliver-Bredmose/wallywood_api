@@ -1,11 +1,14 @@
 .posterStyle {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  margin-left: 45px;
+  margin-bottom: 30px;
 
   div {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    
   }
   img {
     max-width: 160px;
@@ -23,6 +26,7 @@
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
+

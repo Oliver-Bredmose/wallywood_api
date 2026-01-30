@@ -1,6 +1,8 @@
 import type { Genre } from '../../../Types/movieType'
 import style from './Posters.module.scss'
 import parse from 'html-react-parser'
+import { Button } from '../Button/Button'
+
 
 interface PosterProps {
   id: number
@@ -24,7 +26,7 @@ export function Poster({ id, imageUrl, title, description, genres, price }: Post
             return <span>{genre.title}</span>
           })}
         {price && <p>Price: {price}</p>}
-        <button>Læs mere</button>
+        <Button></Button>
       </div>
     </div>
   )
