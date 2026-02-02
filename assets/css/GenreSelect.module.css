@@ -1,3 +1,8 @@
 .genreStyle li {
   list-style-type: none;
+  cursor: pointer;
+}
+
+.genreStyle :hover {
+  color: orangered;
 }/*# sourceMappingURL=GenreSelect.module.css.map */

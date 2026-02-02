@@ -1,8 +1,6 @@
 import type { Genre } from '../../../Types/movieType'
 import style from './Posters.module.scss'
 import parse from 'html-react-parser'
-import { Button } from '../Button/Button'
-
 
 interface PosterProps {
   id: number
@@ -23,10 +21,10 @@ export function Poster({ id, imageUrl, title, description, genres, price }: Post
         <p>Genre:</p>
         {genres &&
           genres.map((genre: Genre) => {
-            return <span>{genre.title}</span>
+            return <span key={genre.id}>{genre.title}</span>
           })}
         {price && <p>Price: {price}</p>}
-        <Button></Button>
+        <button>Læs mere</button>
       </div>
     </div>
   )

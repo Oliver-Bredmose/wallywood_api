@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../frontend/src/components/GenreSelect/GenreSelect.module.scss","GenreSelect.module.css"],"names":[],"mappings":"AACE;EACE,qBAAA;ACAJ","file":"GenreSelect.module.css"}
+{"version":3,"sources":["../../frontend/src/components/GenreSelect/GenreSelect.module.scss","GenreSelect.module.css"],"names":[],"mappings":"AACE;EACE,qBAAA;EACA,eAAA;ACAJ;;ADKA;EACE,gBAAA;ACFF","file":"GenreSelect.module.css"}

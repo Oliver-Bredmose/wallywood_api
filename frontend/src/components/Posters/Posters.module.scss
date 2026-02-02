@@ -30,3 +30,30 @@
   }
 }
 
+.Button{
+  background-color: #b48a7f;
+  color: #3b2a25;
+
+  border: 1px solid #9a7368;
+  border-radius: 8px;
+
+  padding: 4px 10px;   /* much smaller */
+  font-size: 13px;     /* smaller text */
+  font-weight: 500;
+
+  height: 28px;        /* compact height */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+display: inline-block; /* or inline-flex */
+
+  cursor: pointer;
+
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: background 0.15s ease;
+}
+
+.button:hover {
+  background-color: #a97f74;
+}

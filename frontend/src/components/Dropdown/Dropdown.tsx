@@ -1,14 +1,16 @@
-export function Dropdown() {
+import type { SetStateAction } from 'react'
 
+interface DropDownProps {
+  setSelectedSort: React.Dispatch<SetStateAction<string>>
+}
 
-    return (
-
-        <select onChange={{Event} => console.log();}>
-            <option value="asc">Pris - Stigende</option>
-            <option value="desc">Pris - Faldende</option>
-            <option value="title"> Title </option>
-
-        </select>
-
-    )
+export function Dropdown({ setSelectedSort }: DropDownProps) {
+  return (
+    <select onChange={(event) => setSelectedSort(event.target.value)}>
+      <option defaultValue={'asc'}>Sorter efter</option>
+      <option value='asc'>Pris - stigende</option>
+      <option value='desc'>Pris - faldende</option>
+      <option value='name'>Titel</option>
+    </select>
+  )
 }

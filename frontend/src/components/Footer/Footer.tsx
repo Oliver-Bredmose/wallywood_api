@@ -16,10 +16,10 @@ export function Footer() {
         </div>
       </section>
       <section>
-        <p>Pinterest</p>
-        <p>Instagram</p>
-        <p>Facebook</p>
-        <p>Twitter</p>
+        <p><img src="frontend/src/assets/svg/Pinterest.svg" alt="Pinterest logo" /></p>
+        <p><img src="frontend/src/assets/svg/Instagram.svg" alt="Instagram logo" /></p>
+        <p><img src="frontend/src/assets/svg/Facebook.svg" alt="Facebook logo" /></p>
+        <p><img src="frontend/src/assets/svg/Twitter.svg" alt="Twitter logo" /></p>
       </section>
     </footer>
   )
