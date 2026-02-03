@@ -17,35 +17,29 @@
   gap: 3rem;
 }
 
-.Sidebar {
-  h2 {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 1rem;
-    font-weight: 400;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      padding: 0.5rem 0;
-      color: #999;
-      cursor: pointer;
-      transition: color 0.3s;
-
-      &:hover {
-        color: #c84b31;
-      }
-
-      &.active {
-        color: #c84b31;
-        font-weight: 500;
-      }
-    }
-  }
+.Sidebar h2 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.Sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.Sidebar ul li {
+  padding: 0.5rem 0;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.Sidebar ul li:hover {
+  color: #c84b31;
+}
+.Sidebar ul li.active {
+  color: #c84b31;
+  font-weight: 500;
 }
 
 .MainContent {
@@ -55,22 +49,18 @@
   align-items: flex-start;
 }
 
-.PosterSection {
-  img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
+.PosterSection img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.InfoSection {
-  h1 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1.5rem;
-    font-weight: 400;
-  }
+.InfoSection h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
 }
 
 .Description {
@@ -78,10 +68,9 @@
   line-height: 1.6;
   color: #666;
   margin-bottom: 2rem;
-
-  p {
-    margin-bottom: 1rem;
-  }
+}
+.Description p {
+  margin-bottom: 1rem;
 }
 
 .Size,
@@ -111,11 +100,10 @@
   border-radius: 4px;
   font-size: 1rem;
   text-align: center;
-
-  &:focus {
-    outline: none;
-    border-color: #a67c52;
-  }
+}
+.QuantityInput:focus {
+  outline: none;
+  border-color: #a67c52;
 }
 
 .AddToCartButton {
@@ -127,10 +115,9 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
-
-  &:hover {
-    background-color: #a83821;
-  }
+}
+.AddToCartButton:hover {
+  background-color: #a83821;
 }
 
 .Stock {
@@ -150,22 +137,17 @@
   .DetailsContent {
     grid-template-columns: 1fr;
   }
-
-  .Sidebar {
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
+  .Sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }
-
 @media (max-width: 768px) {
   .MainContent {
     grid-template-columns: 1fr;
   }
-
   .PosterSection img {
     max-width: 100%;
   }
-}
+}/*# sourceMappingURL=DetailsView.module.css.map */
