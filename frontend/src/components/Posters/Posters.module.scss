@@ -1,21 +1,28 @@
 .posterStyle {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  padding-left: 3rem;
 
-  div {
+  img {
+    max-width: 160px;
+    margin-right: 16px;
+  }
+
+  // Ny wrapper til tekst indhold
+  > div {
     display: flex;
     flex-direction: column;
     gap: 4px;
+  }
+
+  // Wrapper specifikt til beskrivelse/tekst der skal clampes
+  .textContent {
     display: -webkit-box;
     -webkit-line-clamp: 6;
     line-clamp: 6;
     -webkit-box-orient: vertical;
     overflow: hidden;
     word-break: break-word;
-  }
-  img {
-    max-width: 160px;
-    margin-right: 16px;
   }
 
   h4 {
@@ -26,9 +33,48 @@
   span {
     font-size: 0.8rem;
     display: inline-block;
+    margin-right: 0.5rem;
   }
 
   p {
     font-size: 0.9rem;
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+// Flyt infoRow udenfor posterStyle
+.infoRow {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+
+  > div {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.ReadMoreButton {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1.2rem; // Mindre padding
+  background-color: #a67c52;
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem; // Mindre font
+  font-weight: 400;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #8b6842;
   }
 }

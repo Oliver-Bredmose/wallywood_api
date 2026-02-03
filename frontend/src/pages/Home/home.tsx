@@ -8,7 +8,7 @@ import { useFetch } from '../../Hooks/useFetch'
 
 export function Home() {
   const { data, isLoading, error } = useFetch<Array<MovieData>>(
-    'http://localhost:3000/posters?sort_key=random&limit=2&attributes=id,name,description,image,price',
+    'http://localhost:3000/posters?sort_key=random&limit=2',
   )
 
   if (isLoading) {
@@ -28,6 +28,7 @@ export function Home() {
           data.map((item) => {
             return (
               <Poster
+              slug={item.slug}
                 key={item.id}
                 genres={item.genres}
                 title={item.name}

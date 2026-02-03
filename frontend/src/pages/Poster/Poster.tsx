@@ -7,6 +7,8 @@ import { GenreSelect } from '../../components/GenreSelect/GenreSelect'
 import { Title } from '../../components/Title/Title'
 import { Dropdown } from '../../components/Dropdown/Dropdown'
 
+
+
 export function Posters() {
   const [selectedGenre, setSelectedGenre] = useState<string>('komedie')
   const [selectedSort, setSelectedSort] = useState<string>('asc')

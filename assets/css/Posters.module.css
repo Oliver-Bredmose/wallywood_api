@@ -1,21 +1,24 @@
 .posterStyle {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  padding-left: 3rem;
 }
-.posterStyle div {
+.posterStyle img {
+  max-width: 160px;
+  margin-right: 16px;
+}
+.posterStyle > div {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+.posterStyle .textContent {
   display: -webkit-box;
   -webkit-line-clamp: 6;
   line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
   word-break: break-word;
-}
-.posterStyle img {
-  max-width: 160px;
-  margin-right: 16px;
 }
 .posterStyle h4 {
   font-size: 1.2rem;
@@ -24,7 +27,43 @@
 .posterStyle span {
   font-size: 0.8rem;
   display: inline-block;
+  margin-right: 0.5rem;
 }
 .posterStyle p {
   font-size: 0.9rem;
+  margin: 0;
+  display: inline-block;
+}
+
+.infoRow {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.infoRow > div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+.infoRow p {
+  margin: 0;
+}
+
+.ReadMoreButton {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1.2rem;
+  background-color: #a67c52;
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 400;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+}
+.ReadMoreButton:hover {
+  background-color: #8b6842;
 }/*# sourceMappingURL=Posters.module.css.map */

@@ -1,0 +1,44 @@
+@use '../../styles/globals' as globals;
+
+
+.AboutContent {
+  display: flex;
+  gap: 2rem; // Space between text and image
+  align-items: center; // Vertically center both sections
+  max-width: 1200px; // Optional: contain the width
+  margin: 0 auto; // Optional: center the content
+  padding: 2rem; // Optional: some breathing room
+}
+
+.TextSection {
+  flex: 1;
+  margin-top: -11rem; // Adjust the value as needed
+  color: #D97852;
+}
+
+.AboutText{
+    color: black;
+}
+
+
+.ImageSection {
+  flex: 0 0 auto; // Doesn't shrink, natural size
+  
+  img {
+    width: 100%;
+    max-width: 400px; // Adjust to your preference
+    height: auto;
+    display: block;
+  }
+}
+
+// Make it stack on mobile
+@media (max-width: 768px) {
+  .AboutContent {
+    flex-direction: column; // Stack vertically on small screens
+  }
+  
+  .ImageSection {
+    order: 2; 
+  }
+}

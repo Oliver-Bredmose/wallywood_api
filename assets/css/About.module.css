@@ -1,0 +1,41 @@
+body {
+  background-color: #5C1F06;
+}
+
+.AboutContent {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.TextSection {
+  flex: 1;
+  margin-top: -11rem;
+  color: #D97852;
+}
+
+.AboutText {
+  color: black;
+}
+
+.ImageSection {
+  flex: 0 0 auto;
+}
+.ImageSection img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .AboutContent {
+    flex-direction: column;
+  }
+  .ImageSection {
+    order: 2;
+  }
+}/*# sourceMappingURL=About.module.css.map */

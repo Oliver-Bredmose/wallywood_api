@@ -1,4 +1,8 @@
 import style from './Footer.module.scss'
+import pinterest from '../../assets/svg/Pinterest.svg'
+import instagram from '../../assets/svg/Instagram.svg'
+import facebook from '../../assets/svg/Facebook.svg'
+import twitter from '../../assets/svg/Twitter.svg'
 
 export function Footer() {
   return (
@@ -15,11 +19,11 @@ export function Footer() {
           <p>MOBIL: +45 1232 2323</p>
         </div>
       </section>
-      <section>
-        <p><img src="frontend/src/assets/svg/Pinterest.svg" alt="Pinterest logo" /></p>
-        <p><img src="frontend/src/assets/svg/Instagram.svg" alt="Instagram logo" /></p>
-        <p><img src="frontend/src/assets/svg/Facebook.svg" alt="Facebook logo" /></p>
-        <p><img src="frontend/src/assets/svg/Twitter.svg" alt="Twitter logo" /></p>
+      <section className={style.img}>
+        <img src={pinterest} alt="Pinterest logo" />
+        <img src={instagram} alt="Instagram logo" />
+        <img src={facebook} alt="Facebook logo" />
+        <img src={twitter} alt="Twitter logo" />
       </section>
     </footer>
   )
