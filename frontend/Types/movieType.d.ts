@@ -3,8 +3,9 @@ export interface MovieData {
   name: string
   description: string
   image: string
-  genres: Genre[]
   price: number
+  genres: Genre[]
+  slug: string
 }
 
 export interface Genre {
